@@ -306,10 +306,13 @@ def _build_merge_map(sheet) -> Dict[Tuple[int, int], Any]:
     We propagate that value so downstream logic sees the right text.
     """
     merge_map: Dict[Tuple[int, int], Any] = {}
+    cells_dict = sheet._cells
     for merge_range in sheet.merged_cells.ranges:
-        top_left = sheet.cell(merge_range.min_row, merge_range.min_col).value
-        for row in range(merge_range.min_row, merge_range.max_row + 1):
-            for col in range(merge_range.min_col, merge_range.max_col + 1):
+        min_r, min_c = merge_range.min_row, merge_range.min_col
+        cell = cells_dict.get((min_r, min_c))
+        top_left = cell.value if cell else None
+        for row in range(min_r, merge_range.max_row + 1):
+            for col in range(min_c, merge_range.max_col + 1):
                 merge_map[(row, col)] = top_left
     return merge_map
 
@@ -320,11 +323,12 @@ def _flatten_rows(sheet, merge_map: Dict) -> List[List[str]]:
     Uses merge_map to fill in merged cell values.
     """
     result = []
-    for row in sheet.iter_rows():
+    for r_idx, row in enumerate(sheet.iter_rows(values_only=True), 1):
         cells = []
-        for cell in row:
-            val = merge_map.get((cell.row, cell.column), cell.value)
-            cells.append(clean_text(val))
+        for c_idx, val in enumerate(row, 1):
+            merged_val = merge_map.get((r_idx, c_idx))
+            final_val = merged_val if merged_val is not None else val
+            cells.append(clean_text(final_val))
         result.append(cells)
     return result
 
