@@ -1,0 +1,18 @@
+section_id	question_text	is_question	response_type	notes
+	Does your organization have a formal access control policy?	1		
+	Do you enforce multi-factor authentication (MFA) for all administrative accounts?	1		
+	Is privileged access management (PAM) in place for all critical systems?	1		
+	Describe your process for provisioning and deprovisioning user access.	1		
+	How often are user access rights reviewed?	1		
+	Are all default passwords changed upon system deployment?	1		
+	Do you maintain an inventory of all user accounts with privileged access?	1		
+	Is data encrypted at rest using AES-256 or equivalent?	1		
+	Is all data in transit protected using TLS 1.2 or higher?	1		
+	Explain your key management practices and rotation schedule.	1		
+	Are encryption keys stored separately from encrypted data?	1		
+	Do you use a Hardware Security Module (HSM) for key storage?	1		
+	Do you have a documented incident response plan?	1		
+	How quickly does your organization respond to a confirmed security incident?	1		
+	Describe your process for notifying customers of a data breach.	1		
+	Is your incident response plan tested at least annually?	1		
+	Are incident response roles and responsibilities clearly defined?	1		

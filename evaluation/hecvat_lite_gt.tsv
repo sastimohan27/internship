@@ -1,0 +1,64 @@
+section_id	question_text	is_question	response_type	notes
+	Describe your organization’s business background and ownership structure, including all parent and subsidiary relationships.	1		
+	Have you had an unplanned disruption to this product/service in the past 12 months?	1		
+	Do you have a dedicated Information Security staff or office?	1		
+	Do you have a dedicated Software and System Development team(s)? (e.g., Customer Support, Implementation, Product Management, etc.)	1		
+	Does your product process protected health information (PHI) or any data covered by the Health Insurance Portability and Accountability Act?	1		
+	Will data regulated by PCI DSS reside in the vended product?	1		
+	Use this area to share information about your environment that will assist those who are assessing your company data security program.	1		
+	Have you undergone a SSAE 18 / SOC 2 audit?	1		
+	Have you completed the Cloud Security Alliance (CSA) CAIQ?	1		
+	Have you received the Cloud Security Alliance STAR certification?	1		
+	Do you conform with a specific industry standard security framework? (e.g., NIST Cybersecurity Framework, CIS Controls, ISO 27001, etc.)	1		
+	Can the systems that hold the institution's data be compliant with NIST SP 800-171 and/or CMMC Level 2 standards?	1		
+	Can you provide overall system and/or application architecture diagrams including a full description of the data flow for all components of the system?	1		
+	Does your organization have a data privacy policy?	1		
+	Do you have a documented, and currently implemented, employee onboarding and offboarding policy?	1		
+	Do you have a well-documented Business Continuity Plan (BCP) that is tested annually?	1		
+	Do you have a well-documented Disaster Recovery Plan (DRP) that is tested annually?	1		
+	Do you have a documented change management process?	1		
+	Are access controls for institutional accounts based on structured rules, such as role-based access control (RBAC), attribute-based access control (ABAC), or policy-based access control (PBAC)?	1		
+	Are access controls for staff within your organization based on structured rules, such as RBAC, ABAC, or PBAC?	1		
+	Do you have a documented and currently implemented strategy for securing employee workstations when they work remotely (i.e., not in a trusted computing environment)?	1		
+	Does the system provide data input validation and error messages?	1		
+	Are you using a web application firewall (WAF)?	1		
+	Do you have a process and implemented procedures for managing your software supply chain (e.g., libraries, repositories, frameworks, etc.)?	1		
+	Does your solution support single sign-on (SSO) protocols for user and administrator authentication?	1		
+	Does your organization participate in InCommon or another eduGAIN-affiliated trust federation?	1		
+	Does your application support integration with other authentication and authorization systems?	1		
+	Does your solution support any of the following Web SSO standards? [e.g., SAML2 (with redirect flow), OIDC, CAS, or other]	1		
+	Do you support differentiation between email address and user identifier?	1		
+	Do you have a systems management and configuration strategy that encompasses servers, appliances, cloud services, applications, and mobile devices (company and employee owned)?	1		
+	Will the institution be notified of major changes to your environment that could impact the institution's security posture?	1		
+	Are your systems and applications scanned for vulnerabilities [that are then remediated] prior to new releases?	1		
+	Have your systems and applications had a third-party security assessment completed in the past year?	1		
+	Do you have policy and procedure, currently implemented, guiding how security risks are mitigated until patches can be applied?	1		
+	Does the environment provide for dedicated single-tenant capabilities? If not, describe how your product or environment separates data from different customers (e.g., logically, physically, single tenancy, multi-tenancy).	1		
+	Is sensitive data encrypted, using secure protocols/algorithms, in transport? (e.g., system-to-client)	1		
+	Is sensitive data encrypted, using secure protocols/algorithms, in storage? (e.g., disk encryption, at-rest, files, and within a running database)	1		
+	Are involatile backup copies made according to predefined schedules and securely stored and protected?	1		
+	Can the institution extract a full or partial backup of data?	1		
+	Do you have a media handling process that is documented and currently implemented that meets established business needs and regulatory requirements, including end-of-life, repurposing, and data sanitization procedures?	1		
+	Does your staff (or third party) have access to institutional data (e.g., financial, PHI or other sensitive information) within the application/system?	1		
+	Does your company manage the physical data center where the institution's data will reside?	1		
+	Are you generally able to accomodate storing each institution's data within their geographic region?	1		
+	Does the hosting provider have a SOC 2 Type 2 report available?	1		
+	Does your organization have physical security controls and policies in place?	1		
+	Do you have physical access control and video surveillance to prevent/detect unauthorized access to your data center?	1		
+	Do you enforce network segmentation between trusted and untrusted networks (i.e., Internet, DMZ, Extranet, etc.)?	1		
+	Are you utilizing a stateful packet inspection (SPI) firewall?	1		
+	Do you use an automated IDS/IPS system to monitor for intrusions?	1		
+	Are you employing any next-generation persistent threat (NGPT) monitoring?	1		
+	Do you require connectivity to the institution's network for support/administration or access into any existing systems for integration purposes?	1		
+	Do you have a formal incident response plan?	1		
+	Do you have an incident response process and reporting in place to investigate any potential incidents and report actual incidents?	1		
+	Do you carry cyber-risk insurance to protect against unforeseen service outages, data that is lost or stolen, and security incidents?	1		
+	Do you have either an internal incident response team or retain an external team?	1		
+	Do you have the capability to respond to incidents on a 24 x 7 x 365 basis?	1		
+	Can you share the organization chart, mission statement, and policies for your information security unit?	1		
+	Are information security principles designed into the product lifecycle?	1		
+	Do you have a documented information security policy?	1		
+	Will institutional data be shared with or hosted by any third parties? (e.g., any entity not wholly owned by your company is considered a third party)	1		
+	Do you perform security assessments of third-party companies with which you share data? (e.g., hosting providers, cloud services, PaaS, IaaS, SaaS)	1		
+	Do you have an implemented third-party management strategy?	1		
+	Do you have a process and implemented procedures for managing your hardware supply chain? (e.g., telecommunications equipment, export licensing, computing devices)	1		

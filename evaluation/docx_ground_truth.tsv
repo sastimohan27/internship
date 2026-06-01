@@ -1,0 +1,14 @@
+section_id	question_text	is_question	response_type	notes
+	1.1 Is your network segmented using firewalls or VLANs?	1		
+	1.2 Do you perform regular vulnerability scans of your network perimeter?	1		
+	1.3 Are intrusion detection/prevention systems (IDS/IPS) deployed?	1		
+	1.4 Describe your patch management process for network devices.	1		
+	1.5 Are all remote access connections made via VPN with MFA?	1		
+	3.1 Are your data centers protected by physical access controls (badge, biometric)?	1		
+	3.2 Is CCTV surveillance in place for all server room areas?	1		
+	3.3 Provide details of your visitor management policy for data center access.	1		
+	Does your organization classify data by sensitivity level?	1		
+	Is personal data (PII) stored in encrypted form?	1		
+	Describe your data retention and deletion policy.	1		
+	Do you have a data loss prevention (DLP) solution in place?	1		
+	Are data transfers to third parties governed by data processing agreements (DPAs)?	1		
