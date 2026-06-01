@@ -58,10 +58,10 @@ python normalizer/schema_validator.py output.json
 ### Run accuracy evaluation
 
 ```bash
-python evaluation/evaluate.py evaluation/ground_truth_sample.json output.json
+python evaluation/evaluate.py --output output.json --ground-truth evaluation/xlsx_ground_truth.tsv
 
 # Add --verbose to see which questions matched
-python evaluation/evaluate.py evaluation/ground_truth_sample.json output.json --verbose
+python evaluation/evaluate.py --output output.json --ground-truth evaluation/xlsx_ground_truth.tsv --verbose
 ```
 
 ### Generate sample test files (for demo)

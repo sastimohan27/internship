@@ -19,7 +19,7 @@ See `evaluation/evaluate.py` for details.
 **Evaluation Command:**
 ```bash
 python normalize.py data/HECVATLite306.xlsx --out hecvat_out.json --validate
-python evaluation/evaluate.py evaluation/hecvat_lite_gt.json hecvat_out.json
+python evaluation/evaluate.py --output hecvat_out.json --ground-truth evaluation/hecvat_lite_gt.tsv
 ```
 
 **Key Accomplishments:**
@@ -43,7 +43,7 @@ python evaluation/evaluate.py evaluation/hecvat_lite_gt.json hecvat_out.json
 **Evaluation Command:**
 ```bash
 python normalize.py data/sample_questionnaire.xlsx --out xlsx_out.json --validate
-python evaluation/evaluate.py evaluation/xlsx_ground_truth.json xlsx_out.json
+python evaluation/evaluate.py --output xlsx_out.json --ground-truth evaluation/xlsx_ground_truth.tsv
 ```
 
 **Key Accomplishments:**
@@ -65,7 +65,7 @@ python evaluation/evaluate.py evaluation/xlsx_ground_truth.json xlsx_out.json
 **Evaluation Command:**
 ```bash
 python normalize.py data/sample_questionnaire.docx --out docx_out.json --validate
-python evaluation/evaluate.py evaluation/docx_ground_truth.json docx_out.json
+python evaluation/evaluate.py --output docx_out.json --ground-truth evaluation/docx_ground_truth.tsv
 ```
 
 **Key Accomplishments:**
