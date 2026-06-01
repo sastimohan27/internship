@@ -1,0 +1,13 @@
+{
+  "questions": [
+    {
+      "text": "Does your organization have a data privacy policy?"
+    },
+    {
+      "text": "Do you have a formal incident response plan?"
+    },
+    {
+      "text": "Describe your process for notifying customers of a data breach."
+    }
+  ]
+}

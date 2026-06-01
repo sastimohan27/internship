@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SecurityQuestionnaireOutput",
+  "description": "Normalized output schema for security questionnaires",
+  "type": "object",
+  "required": ["source_file", "questionnaire_name", "sections"],
+  "properties": {
+    "source_file": {
+      "type": "string",
+      "description": "Path or filename of the original file"
+    },
+    "questionnaire_name": {
+      "type": "string",
+      "description": "Detected or inferred name of the questionnaire"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version string if found, empty string if not"
+    },
+    "sections": {
+      "type": "array",
+      "description": "Top-level sections of the questionnaire",
+      "items": {
+        "type": "object",
+        "required": ["section_id", "section_title", "questions"],
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "section_title": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["question_id", "text", "response_type", "options", "guidance", "source_location"],
+              "properties": {
+                "question_id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "response_type": {
+                  "type": "string",
+                  "enum": ["yes_no", "multiple_choice", "free_text", "unknown"]
+                },
+                "options": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "guidance": {
+                  "type": "string"
+                },
+                "source_location": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source_file": "sample_questionnaire.xlsx",
+  "questionnaire_name": "Sample Security Questionnaire",
+  "version": "1.0",
+  "sections": [
+    {
+      "section_id": "AC",
+      "section_title": "Access Control",
+      "questions": [
+        {
+          "question_id": "AC-Q1",
+          "text": "Does your organization have a formal access control policy?",
+          "response_type": "yes_no",
+          "options": ["Yes", "No", "N/A"],
+          "guidance": "Provide documentation if available.",
+          "source_location": {}
+        },
+        {
+          "question_id": "AC-Q2",
+          "text": "Do you enforce multi-factor authentication (MFA) for all administrative accounts?",
+          "response_type": "yes_no",
+          "options": ["Yes", "No", "N/A"],
+          "guidance": "",
+          "source_location": {}
+        },
+        {
+          "question_id": "AC-Q3",
+          "text": "Describe your process for provisioning and deprovisioning user access.",
+          "response_type": "free_text",
+          "options": [],
+          "guidance": "",
+          "source_location": {}
+        }
+      ]
+    },
+    {
+      "section_id": "ENC",
+      "section_title": "Encryption",
+      "questions": [
+        {
+          "question_id": "ENC-Q1",
+          "text": "Is data encrypted at rest using AES-256 or equivalent?",
+          "response_type": "yes_no",
+          "options": ["Yes", "No", "N/A"],
+          "guidance": "",
+          "source_location": {}
+        },
+        {
+          "question_id": "ENC-Q2",
+          "text": "Is all data in transit protected using TLS 1.2 or higher?",
+          "response_type": "yes_no",
+          "options": ["Yes", "No", "N/A"],
+          "guidance": "",
+          "source_location": {}
+        },
+        {
+          "question_id": "ENC-Q3",
+          "text": "Explain your key management practices and rotation schedule.",
+          "response_type": "free_text",
+          "options": [],
+          "guidance": "",
+          "source_location": {}
+        }
+      ]
+    },
+    {
+      "section_id": "IR",
+      "section_title": "Incident Response",
+      "questions": [
+        {
+          "question_id": "IR-Q1",
+          "text": "Do you have a documented incident response plan?",
+          "response_type": "yes_no",
+          "options": ["Yes", "No", "N/A"],
+          "guidance": "",
+          "source_location": {}
+        },
+        {
+          "question_id": "IR-Q2",
+          "text": "How quickly does your organization respond to a confirmed security incident?",
+          "response_type": "multiple_choice",
+          "options": ["Within 1 hour", "Within 4 hours", "Within 24 hours", "Within 72 hours"],
+          "guidance": "",
+          "source_location": {}
+        },
+        {
+          "question_id": "IR-Q3",
+          "text": "Describe your process for notifying customers of a data breach.",
+          "response_type": "free_text",
+          "options": [],
+          "guidance": "",
+          "source_location": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.DS_Store
+*.json
+!schema/output_schema.json
+!evaluation/*.json
+data/*.xlsx
+data/*.docx
+

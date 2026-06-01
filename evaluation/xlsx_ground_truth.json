@@ -1,0 +1,55 @@
+{
+  "questions": [
+    {
+      "text": "Does your organization have a formal access control policy?"
+    },
+    {
+      "text": "Do you enforce multi-factor authentication (MFA) for all administrative accounts?"
+    },
+    {
+      "text": "Is privileged access management (PAM) in place for all critical systems?"
+    },
+    {
+      "text": "Describe your process for provisioning and deprovisioning user access."
+    },
+    {
+      "text": "How often are user access rights reviewed?"
+    },
+    {
+      "text": "Are all default passwords changed upon system deployment?"
+    },
+    {
+      "text": "Do you maintain an inventory of all user accounts with privileged access?"
+    },
+    {
+      "text": "Is data encrypted at rest using AES-256 or equivalent?"
+    },
+    {
+      "text": "Is all data in transit protected using TLS 1.2 or higher?"
+    },
+    {
+      "text": "Explain your key management practices and rotation schedule."
+    },
+    {
+      "text": "Are encryption keys stored separately from encrypted data?"
+    },
+    {
+      "text": "Do you use a Hardware Security Module (HSM) for key storage?"
+    },
+    {
+      "text": "Do you have a documented incident response plan?"
+    },
+    {
+      "text": "How quickly does your organization respond to a confirmed security incident?"
+    },
+    {
+      "text": "Describe your process for notifying customers of a data breach."
+    },
+    {
+      "text": "Is your incident response plan tested at least annually?"
+    },
+    {
+      "text": "Are incident response roles and responsibilities clearly defined?"
+    }
+  ]
+}
