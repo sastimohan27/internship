@@ -67,9 +67,9 @@ def token_overlap(a: str, b: str) -> float:
     return len(ta & tb) / len(ta | tb)
 
 
-def best_match(candidate: str, pool: List[str], threshold: float = 0.55) -> Tuple[int, float]:
+def best_match(candidate: str, pool: List[str], matched_indices: set, threshold: float = 0.55) -> Tuple[int, float]:
     """
-    Find the best-matching string in *pool* for *candidate*.
+    Find the best-matching string in *pool* for *candidate*, ignoring indices in matched_indices.
     Returns (index, score) or (-1, 0.0) if no match exceeds threshold.
 
     WHY 0.55?  At this threshold, "Do you have a data center security policy?"
@@ -80,6 +80,8 @@ def best_match(candidate: str, pool: List[str], threshold: float = 0.55) -> Tupl
     """
     best_idx, best_score = -1, 0.0
     for i, p in enumerate(pool):
+        if i in matched_indices:
+            continue
         score = token_overlap(candidate, p)
         if score > best_score:
             best_idx, best_score = i, score
@@ -189,7 +191,7 @@ def compute_metrics(
     matched_gt_indices = set()
 
     for ext_idx, ext_text in enumerate(extracted_texts):
-        gt_idx, score = best_match(ext_text, gt_texts, threshold)
+        gt_idx, score = best_match(ext_text, gt_texts, matched_gt_indices, threshold)
         if gt_idx >= 0 and gt_idx not in matched_gt_indices:
             tp_list.append((ext_idx, gt_idx, score))
             matched_gt_indices.add(gt_idx)
